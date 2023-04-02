@@ -1,0 +1,42 @@
+.nav-item a{
+    padding: 7px;
+    color: #00b894;
+}
+.nav-item a:hover{
+    color: #d63031;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 12rem;
+    align-items: center;
+    background-color: #1C2B35;
+    min-width: 1360px;
+}
+#bar-icon{
+    display: none;
+    font-size: 2rem;
+    margin-left: 5px;
+}
+.closebtn{
+    font-size: 2rem;
+    margin-left: 5px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width:576px) {
+    .header{
+        flex-direction: column;
+        gap: 0;
+        min-width: fit-content;
+    }
+    
+    .nav-item a{
+        display: block;
+    }
+    #bar-icon{
+        display: block;
+    }
+}
