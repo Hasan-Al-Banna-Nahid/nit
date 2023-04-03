@@ -1,0 +1,11 @@
+.students-data{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: 10px 100px;
+}
+.singleStudent{
+    border: 1.5px solid slateblue;
+    padding: 10px;
+    border-radius: 8px;
+}
