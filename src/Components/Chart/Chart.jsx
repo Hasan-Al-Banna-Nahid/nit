@@ -24,8 +24,8 @@ const Chart = () => {
     return (
         <div style={{margin:'0 auto'}}>
             <LineChart width={500} height={300} data={data}>
-            <Line type="monotone"  dataKey="Department" stroke="#6D214F" />
-            <Line dataKey="students"  stroke="#341f97" />
+            <Line type="monotone"  dataKey="Department" stroke="#6c5ce7" />
+            <Line dataKey="students"  stroke="#00b894" />
             <XAxis dataKey="Department"  stroke="#EA2027"/>
             <YAxis   stroke="#f53b57"/>
             <Tooltip />

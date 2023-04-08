@@ -7,8 +7,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Career from './Components/Career/Career'
 import AcademicInfo from './Components/Academic-Info/AcademicInfo'
 import Analytics from './Components/Analytics/Analytics'
-import Students from './Components/Students/Students'
+import CMTStudents from './Components/CMTStudents/CMTStudents'
 import Error from './Components/Error/Error'
+import FifthSemester from './Components/CMTData/FifthSemester/FifthSemester'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,8 +22,6 @@ const router = createBrowserRouter([
       {
         path:'/academic-info',
         element:<AcademicInfo />,
-        loader : () => fetch('https://jsonplaceholder.typicode.com/users')
-
       },
       {
         path:'/career',
@@ -33,13 +32,17 @@ const router = createBrowserRouter([
         element:<Analytics />
       },
       {
-        path: '/students/:userId',
-        element: <Students />,
-        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.userId}`)
+        path: '/CMTStudents',
+        element: <CMTStudents />,
       },
       {
         path:'*',
         element:<Error />
+      },
+      {
+        path:'/Cmt5th',
+        element:<FifthSemester />,
+        loader : () => fetch('cmtstudent5th.json')
       }
     
     ]

@@ -1,0 +1,13 @@
+.students{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px auto;
+    max-width: 1000px;
+    color: #130f40;
+    font-weight: 800;
+    gap: 20px;
+}
+.btnBack{
+    margin: 0 auto;
+    width: 150px;
+}
