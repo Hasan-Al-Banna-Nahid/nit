@@ -1,0 +1,14 @@
+.chart{
+    margin: 0 auto;
+    width: 500px;
+}
+@media screen and (max-width:576px) {
+    .chart{
+        width: 100%;
+        margin: 0 -413px;
+    }
+    .lineChart{
+        width: 300px;
+        height: 150px;
+    }
+}

@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-    const [isOpen, setIsOpen] = useState(false)
     return (
         <div className='header'>
            
@@ -24,14 +23,7 @@ const Home = () => {
                     <Link to="/career">Career</Link>
                     <Link to="/analytics">Analytics</Link>
                 </nav>
-                <div onClick={() => setIsOpen(!isOpen)} id='bar-icon'>
-                    <span>
-                        {isOpen === true ?
-                            <FontAwesomeIcon className='closebtn' icon={faClose} /> :
-                            <FontAwesomeIcon className='barbtn' icon={faBars} />}
-                    </span>
-
-                </div>
+                
                 
                 
             </div>

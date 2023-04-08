@@ -6,3 +6,10 @@
     width: fit-content;
     color: #130f40;
 }
+@media screen and (max-width:576px) {
+    .style{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0;
+        text-align: center;
+    }
+}

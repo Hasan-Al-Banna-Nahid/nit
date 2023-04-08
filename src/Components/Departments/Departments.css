@@ -2,3 +2,8 @@
     display: grid;
     grid-template-columns: 3fr 8fr 3fr;
 }
+@media screen and (max-width:576px) {
+    .department{
+        grid-template-columns: 1;
+    }
+}
