@@ -25,7 +25,7 @@ const FifthSemester = () => {
                     })
                 }
            </div>
-           <div style={{width:'150px',margin:'20px auto'}}>
+           <div style={{width:'150px',margin:'30px auto'}}>
                 <Button onClick={handlePrevious} variant="outlined" color="error">
                   Go Back
                 </Button>
